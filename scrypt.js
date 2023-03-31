@@ -52,3 +52,13 @@ document.onscroll = function () {
         header.classList.add('fixed');
     document.body.style.paddingTop = headerH + "px";
 }
+
+
+window.addEventListener('scroll', () => {
+    console.log(window.pageYOffset);
+    if (window.pageYOffset > 600) {
+        document.querySelector('.go-top').style.display = 'block'
+    } else {
+        document.querySelector('.go-top').style.display = 'none'
+    }
+}); 

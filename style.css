@@ -473,6 +473,7 @@
     cursor: pointer;
     padding: 10px 15px;
     color: rgba(0, 51, 153, 0.5);
+    display: none;
 }
 
 .go-top--show {
