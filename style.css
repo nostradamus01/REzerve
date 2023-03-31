@@ -365,6 +365,10 @@
 
 .re-nkar {
     background-image: url(img-shor/cf450dc1f23fd5795a833230475565c5.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 75% 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -473,7 +477,8 @@
     cursor: pointer;
     padding: 10px 15px;
     color: rgba(0, 51, 153, 0.5);
-    display: none;
+    opacity: 0;
+    transition: opacity .3s linear;
 }
 
 .go-top--show {
@@ -522,6 +527,12 @@ nav a:hover {
     color: white;
 }
 
+.go-top-lav {
+    display: block;
+    opacity: 1;
+
+}
+
 @media (max-width: 600px) {
     .big-images {
         flex-direction: column;
@@ -534,3 +545,4 @@ nav a:hover {
         background-image: none;
     }
 }
+

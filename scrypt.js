@@ -57,8 +57,8 @@ document.onscroll = function () {
 window.addEventListener('scroll', () => {
     console.log(window.pageYOffset);
     if (window.pageYOffset > 600) {
-        document.querySelector('.go-top').style.display = 'block'
+        document.querySelector('.go-top').classList.add('go-top-lav');
     } else {
-        document.querySelector('.go-top').style.display = 'none'
+        document.querySelector('.go-top').classList.remove('go-top-lav');
     }
 }); 
