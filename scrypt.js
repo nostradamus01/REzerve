@@ -62,3 +62,12 @@ window.addEventListener('scroll', () => {
         document.querySelector('.go-top').classList.remove('go-top-lav');
     }
 }); 
+
+
+// burger-menu 
+const burgerBtn = document.querySelector('.burger-menu-btn');
+const burgerMenu = document.querySelector('.burger-menu-cont');
+burgerBtn.addEventListener('click', () => {
+    burgerBtn.classList.toggle('opened');
+    burgerMenu.classList.toggle('opened');
+})
