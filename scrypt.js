@@ -5,6 +5,8 @@ for (let g7 = 0; g7 < conts.length; g7++) {
     });
 }
 
+
+
 const goTopBtn = document.querySelector(".go-top");
 
 goTopBtn.addEventListener("click", goTop);
@@ -61,7 +63,7 @@ window.addEventListener('scroll', () => {
     } else {
         document.querySelector('.go-top').classList.remove('go-top-lav');
     }
-}); 
+});
 
 
 // burger-menu 
@@ -70,4 +72,12 @@ const burgerMenu = document.querySelector('.burger-menu-cont');
 burgerBtn.addEventListener('click', () => {
     burgerBtn.classList.toggle('opened');
     burgerMenu.classList.toggle('opened');
+})
+
+const burgerItems = document.querySelectorAll('.burger-item');
+burgerItems.forEach((item) => {
+    item.addEventListener('click', () => {
+        burgerMenu.classList.remove('opened');
+        burgerBtn.classList.remove('opened');
+    })
 })
