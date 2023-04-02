@@ -80,4 +80,4 @@ burgerItems.forEach((item) => {
         burgerMenu.classList.remove('opened');
         burgerBtn.classList.remove('opened');
     })
-})
+});
