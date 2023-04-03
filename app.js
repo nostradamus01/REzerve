@@ -11,6 +11,7 @@ const langArr = {
     'en' : 'Home',
     'ru' :'Главный'
  },
+ 
 }
 
 
