@@ -158,7 +158,7 @@ const langArr = {
         en: 'We want to ensure that our clients love our products, but if you need to return something, we will be happy to help. Simply send us an email and we will help you through the process.',
         ru: 'Мы хотим, чтобы наши клиенты любили нашу продукцию, но если вам нужно что-то вернуть, мы будем рады помочь. Просто отправьте нам электронное письмо, и мы поможем вам в этом процессе.'
     },
-    tetx9:{
+    text9:{
         en: 'Are discounts available?',
         ru: 'Доступны ли скидки?'
     },

@@ -81,6 +81,7 @@
     border: none;
     margin-left:12px;
     cursor: pointer;
+    outline: none;
 }
 
 .header-name {
