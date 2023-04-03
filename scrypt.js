@@ -14,7 +14,7 @@ window.addEventListener("scroll", trackScroll);
 
 
 function trackScroll() {
-    const scrolled = window.pageYOffset;
+    const scrolled = window.scrollY;
     const coords = document.documentElement.clientHeight;
     if (scrolled > coords) {
         goTopBtn.classList.add(".go-top--show");
@@ -25,7 +25,7 @@ function trackScroll() {
 }
 
 function goTop() {
-    if (window.pageYOffset > 0) {
+    if (window.scrollY > 0) {
         window.scrollBy(0, -75);
         setTimeout(goTop, 0);
     }
@@ -44,25 +44,36 @@ for (let anchor of anchors) {
     })
 }
 
-let header = document.querySelector('.js-header');
-let headerH = document.querySelector('.js-header').clientHeight;
+// let header = document.querySelector('.js-header');
+// let headerH = document.querySelector('.js-header').clientHeight;
 
-document.onscroll = function () {
-    let scroll = window.scrollY;
+// document.onscroll = function () {
+//     let scroll = window.scrollY;
 
-    if (scroll > headerH)
-        header.classList.add('fixed');
-    document.body.style.paddingTop = headerH + "px";
-}
+//     if (scroll > headerH)
+//         header.classList.add('fixed');
+//     document.body.style.paddingTop = headerH + "px";
+// }
 
-
+const header = document.querySelector('.header');
+let lastScroll = 0;
 window.addEventListener('scroll', () => {
-    console.log(window.pageYOffset);
-    if (window.pageYOffset > 600) {
+    if (window.scrollY > 600) {
         document.querySelector('.go-top').classList.add('go-top-lav');
     } else {
         document.querySelector('.go-top').classList.remove('go-top-lav');
     }
+console.log(window.scrollY,lastScroll)
+    if(window.scrollY > 400 && window.scrollY > lastScroll ) {
+        //scroll down
+        header.classList.add('hide');
+    }
+    else if(window.scrollY < lastScroll){
+        //scroll up
+        header.classList.remove('hide');
+
+    }
+lastScroll = window.scrollY;
 });
 
 
@@ -81,3 +92,5 @@ burgerItems.forEach((item) => {
         burgerBtn.classList.remove('opened');
     })
 });
+
+

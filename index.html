@@ -38,13 +38,28 @@ c-226 3 -234 4 -266 26 -41 30 -72 90 -72 140 0 55 38 122 86 149 37 22 50 23
             <span class="header-name">
                 <div class="nav">
                     <nav>
+
+
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#masin">About</a></li>
-                            <li><a href="#service">Services</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a class="lng-home"  href="#home">Home</a></li>
+                            <li><a class="lng-about" href="#masin">About</a></li>
+                            <li><a class="lng-services"  href="#service">Services</a></li>
+                            <li><a class="lng-contact"  href="#contact">Contact</a></li>
                         </ul>
                         <button class="to-shop-btn">Go to Shop</button>
+                        
+                        <!-- <select class="change-lang">
+                            <option value="ru">RU</option>
+                            <option value="en">EN</option>
+                        </select> -->
+                        <button id="ru" class="translate">
+                            <img src="img/598862401_znamya_dvuhstoronnee_bez.jpg" alt="ru" width="30" height="20">
+                        </button>
+                        <button id="en" class="translate">
+                            <img src="img/uk.flag_.png" alt="en" width="30" height="20">
+                        </button>
+
+
                     </nav>
                 </div>
                 <div class="burger-menu-btn">
@@ -79,7 +94,7 @@ c-226 3 -234 4 -266 26 -41 30 -72 90 -72 140 0 55 38 122 86 149 37 22 50 23
             <span class="shop-name">
                 Original REzerve Armenian SHOP
             </span>
-            <span class="anunner">
+            <span key="anunner" class="anunner">
                 Armenian production by Erik Stepanyan and Rom Asatryan from Hrazdan
             </span>
         </div>
@@ -223,15 +238,24 @@ c-226 3 -234 4 -266 26 -41 30 -72 90 -72 140 0 55 38 122 86 149 37 22 50 23
     <div class="burger-menu-cont">
         <div class="burger-menu">
             <nav class="in-burger-menu">
-                <a class="burger-item" href="#home">Home</a>
-                <a class="burger-item" href="#masin">About</a>
-                <a class="burger-item" href="#service">Services</a>
-                <a class="burger-item" href="#contact">Contact</a>
+                <div class="leng-burger">
+                <button id="rub" class="translate">
+                    <img src="img/598862401_znamya_dvuhstoronnee_bez.jpg" alt="ru" width="30" height="20">
+                </button>
+                <button id="enb" class="translate">
+                    <img src="img/uk.flag_.png" alt="en" width="30" height="20">
+                </button>
+            </div>
+                <a class="lng-homeb burger-item"  href="#home">Home</a>
+                <a class="lng-aboutb burger-item" href="#masin">About</a>
+                <a class="lng-servicesb burger-item"  href="#service">Services</a>
+                <a class="lng-contactb burger-item"  href="#contact">Contact</a>
                 <button class="to-shop-btn">Go to Shop</button>
             </nav>
         </div>
     </div>
     <script src="scrypt.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
