@@ -198,6 +198,14 @@ const langArr = {
         en: 'Make an order',
         ru: 'Сделать заказ'
     },
+    text19:{
+        en: 'Go To Shop',
+        ru: 'В магазин'
+    },
+    text20:{
+        en: 'Go To Shop',
+        ru: 'В магазин'
+    },
    }
    
    
