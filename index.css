@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.beauty-scrollbar::-webkit-scrollbar,
+.beauty-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+    width: 10px;
+}
+
+.beauty-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.507);
+    border: 2px solid transparent;
+    background-clip: content-box;
+    border-radius: 6px;
+}
+
+.beauty-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(41, 41, 41, 0.2);
+}
+
+.beauty-scrollbar::-webkit-scrollbar-thumb:active {
+    background-color: rgba(79, 79, 79, 0.2);
+}
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgb(39, 39, 39);
+    padding: 20px;
+    top: -100px;
+    z-index: 10;
+    transition: all .2s ease;
+    transform: translateY(100px);
+}
+
+.header.hide{
+    transform: translateY(-50px);
+}
+
+/* .header.fixed {
+    position: fixed;
+    
+} */
+
+.header__wrapper {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-div {
+    max-width: 70px;
+    min-width: 50px;
+    max-height: 70px;
+    min-height: 50px;
+}
+
+.logo {
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+.translate{
+    background-color: white;
+    background: transparent;
+    border: none;
+    margin-left:12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.header-name {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    transition: all .5s linear;
+    display: flex;
+    align-items: center;
+}
+
+.header-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.leng-burger{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.header-name:hover {
+    color: rgb(151, 151, 151);
+}
+
+.go-top {
+    position: fixed;
+    left: 20px;
+    top: 96%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: rgba(0, 51, 153, 0.5);
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+.go-top--show {
+    display: block;
+}
+
+.go-top:hover {
+    color: rgba(0, 51, 153, 0.8);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    left: 30px;
+}
+
+nav li {
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #535353;
+}
+
+.nav {
+    position: relative;
+    color: rgb(133, 70, 70);
+}
+
+.svg-inst {
+    width: 40px;
+}
+
+.re-shop {
+    color: white;
+}
+
+.go-top-lav {
+    display: block;
+    opacity: 1;
+
+}
+
+.burger-menu-btn {
+    display: none;
+    overflow: hidden;
+}
+
+.burger-menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+    width: 48px;
+    cursor: pointer;
+}
+
+.burger-menu-icon .line {
+    height: 6px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: transform 300ms ease;
+    transform-origin: center right;
+}
+
+.burger-menu-btn.opened .line-1 {
+    transform: rotate(-45deg);
+}
+
+.burger-menu-btn.opened .line-3 {
+    transform: rotate(45deg);
+}
+
+.burger-menu-btn.opened .line-2 {
+    transform: translateX(120%);
+}
+
+.burger-menu-cont {
+    position: fixed;
+    top: 106px;
+    background-color: rgb(39, 39, 39);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 300ms ease;
+}
+
+.burger-menu-cont.opened {
+    transform: translateX(0);
+}
+
+.in-burger-menu {
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.in-burger-menu a {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.in-burger-menu .to-shop-btn {
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.main {
+    flex: 1;
+    border: 1px solid black;
+}
+
+.header-bottom {
+    background: rgb(39, 39, 39);
+    width: 100%;
+    height: 40px;
+    margin: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    width: 50%;
+    height: 90%;
+}
+
+@media (max-width: 700px) {
+    .nav {
+        display: none;
+    }
+
+    .burger-menu-btn {
+        display: block;
+    }
+}
