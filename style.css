@@ -690,6 +690,9 @@ nav a:hover {
 
     .grvacq1 {
         font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .shop-name {
