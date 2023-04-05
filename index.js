@@ -185,5 +185,20 @@ const langArr = {
        }
    }
    
-   changeLanguage();
+const apranqner = document.querySelectorAll('.card');
+const form = document.querySelector('.input-cont');
+const searchInput = document.querySelector('.input');
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const searchText =  searchInput.value;
+    apranqner.forEach((apranq) => {
+        const gin = apranq.querySelector('.shor-name')
+        if (gin.innerText.toLowerCase().includes(searchText.toLowerCase())) {
+            apranq.style.display = 'block';
+        } else {
+            apranq.style.display = 'none';
+        }
+    });
+});
 
+toLowerCase
