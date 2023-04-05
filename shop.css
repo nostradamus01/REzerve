@@ -270,9 +270,9 @@
 .card {
     height: 420px;
     background-size: cover;
-    border: 1px solid black;
     padding-bottom: 50px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .card-nkar {
