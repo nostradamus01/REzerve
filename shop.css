@@ -221,7 +221,7 @@
     color: rgba(0, 51, 153, 0.8);
 }
 
-.man {
+.main {
     flex: 1;
 }
 
@@ -274,7 +274,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .card {
-    max-width: 400px;
+    max-width: 350px;
     height: 450px;
     background-size: cover;
     border-radius: 10px;
@@ -464,6 +464,10 @@ nav a:hover {
 
     .card {
         max-width: none;
+    }
+
+    .qart {
+        margin: 0;
     }
 }
 
